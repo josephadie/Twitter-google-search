@@ -129,13 +129,13 @@ main{
     flex-direction: column;
     width: 31rem;
     padding-right: 2rem;
-    gap: 2rem;
+    /* gap: 2rem; */
 }
 
 .twitter-expand-info {
     padding-left: 1.5rem;
     border-left: 1px solid black;
-    width: 17rem;
+    width: 15rem;
     height: 1000px;
 }
 
@@ -206,6 +206,15 @@ main{
 
 }
 
+.Login-on-Twitter-bunch,
+.google-play-bunch,
+.uptodown-bunch,
+.wikipedia-bunch,
+.apple-bunch,
+.button-stack-header-container {
+    margin-top: 2rem;
+}
+
 .icon-x-weblink {
     display: flex;
     align-items: center;
@@ -259,11 +268,6 @@ main{
     text-decoration: none;
 }
 
-/* .google-play-bunch {
-    display: ;
-
-} */
-
 .googleplay-logo-icon {
     display: flex;
     align-items: center;
@@ -276,6 +280,16 @@ main{
 
 .googleplay-logo-icon img {
     width:20px;
+}
+
+.button-stack-header {
+    font-size: 1.5rem;
+}
+
+.button-stack {
+    display: flex;
+    flex-direction: column;
+
 }
 
 
