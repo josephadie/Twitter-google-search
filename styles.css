@@ -289,9 +289,56 @@ main{
 .button-stack {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
 
 }
 
+.button-stack-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+}
 
+.button-stack button img {
+    width: 30px;
+}
+
+.big-google-bottom,
+.bottom-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-stack-header-container {
+    margin-bottom: 1rem;
+}
+
+footer {
+    background: gray;
+    padding: 1rem 4rem 1rem 2rem;
+    
+}
+
+.personalisation {
+    margin-bottom: 1rem;
+    font-size: 14px;         
+}
+
+.location {
+    margin-bottom: 0.5rem; 
+    font-size: 14px;
+}
+
+.footer-bottom-link {
+    display: flex;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    font-size: 14px;
+    gap: 1rem;
+
+}
 
 
