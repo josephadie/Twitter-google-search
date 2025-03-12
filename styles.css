@@ -27,7 +27,7 @@ header {
     border-radius: 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    height: 55px;
+    height: 45px;
     /* make the clear button wider */
 }
 
@@ -122,20 +122,24 @@ header {
 main{
     display: flex;
     margin: 1.5rem;
+    /* white-space: nowrap; */
 }
 
 .twitter-main-info {
     display: flex;
     flex-direction: column;
     width: 31rem;
+    min-width: 31rem;
     padding-right: 2rem;
     /* gap: 2rem; */
 }
 
 .twitter-expand-info {
+
     padding-left: 1.5rem;
     border-left: 1px solid black;
     width: 15rem;
+
     height: 1000px;
 }
 
@@ -154,6 +158,8 @@ main{
     font-size: 22px;
     /* font-weight: 600; */
     padding-bottom: 1rem;
+    /* width: 30rem; */
+
 
 }
 
@@ -197,45 +203,62 @@ main{
     font-size: 13px;
 }
 
-.head-x-result-bunch,
+/* .head-x-result-bunch,
 .Login-on-Twitter-bunch,
 .google-play-bunch {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 
-}
+} */
 
+.head-x-result-bunch,
 .Login-on-Twitter-bunch,
 .google-play-bunch,
 .uptodown-bunch,
 .wikipedia-bunch,
-.apple-bunch,
-.button-stack-header-container {
+.apple-bunch {
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
 }
 
-.icon-x-weblink {
+.icon-x-weblink,
+.icon-x-login-weblink,
+.icon-google-play-weblink,
+.icon-uptodown-weblink,
+.icon-wikipedia-weblink,
+.icon-apple-weblink {
     display: flex;
     align-items: center;
-
-
 }
 
-.x-logo-icon{
+.x-logo-icon,
+.google-play-logo-icon,
+.uptodown-logo-icon,
+.wikipedia-logo-icon,
+.apple-logo-icon {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 0.5rem;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 2rem;
     overflow: hidden;
+    width: 30px;
+    height: 30px;
+}
 
+.uptodown-logo-icon img,
+.google-play-logo-icon img {
+    width:20px;
 }
 
 
 .head-x-result-bunch-details p {
-    font-weight: 600;
+    /* font-weight: 600; */
     font-size: 14px;
     margin-bottom: 1rem;
     line-height: 20px;
@@ -268,19 +291,7 @@ main{
     text-decoration: none;
 }
 
-.googleplay-logo-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2rem;
-    border: 1px solid white;
-    width: 30px;
-    height: 30px;
-}
 
-.googleplay-logo-icon img {
-    width:20px;
-}
 
 .button-stack-header {
     font-size: 1.5rem;
@@ -312,8 +323,18 @@ main{
     justify-content: center;
 }
 
+.big-google-bottom {
+    font-size: 2rem;
+}
+
+.bottom-nav {
+    display: flex;
+    gap: .5rem;
+}
+
 .button-stack-header-container {
     margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 footer {
