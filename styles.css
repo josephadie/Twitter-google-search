@@ -167,6 +167,10 @@ main{
     text-decoration: none;
 }
 
+.expand-but-under {
+    margin-top: 2rem;
+}
+
 .twitter-expand-info {
     padding-left: 1.5rem;
     border-left: 1px solid black;
@@ -257,6 +261,10 @@ main{
     font-size: 18px;
 }
 
+.body-x-result-bunch-link:hover {
+    text-decoration: underline;
+}
+
 .Login-on-Twitter-bunch,
 .google-play-bunch,
 .uptodown-bunch,
@@ -281,7 +289,16 @@ main{
 .head-title-wikipedia a,
 .head-title-apple a {
     font-size: 13px;
+    color: inherit;
 }
+
+.head-title-x a:hover,
+.head-title-google-play a:hover,
+.head-title-uptodown a:hover,
+.head-title-wikipedia a:hover,
+.head-title-apple a:hover{
+    text-decoration: underline;
+} 
 
 .icon-x-weblink,
 .icon-x-login-weblink,
@@ -291,7 +308,10 @@ main{
 .icon-apple-weblink {
     display: flex;
     align-items: center;
+    /* color: inherit; */
 }
+
+
 
 .x-logo-icon,
 .google-play-logo-icon,
@@ -315,13 +335,24 @@ main{
 }
 
 
-.under-x-logo-icon,
-.under-google-play-logo-icon,
-.under-uptodown-logo-icon,
-.under-wikipedia-logo-icon,
-.under-apple-logo-icon {
+.under-x-logo-icon p a,
+.under-google-play-logo-icon p a,
+.under-uptodown-logo-icon p a,
+.under-wikipedia-logo-icon p a,
+.under-apple-logo-icon p a {
     font-size: 20px;
+    color: rgb(71, 71, 255);
 }
+
+.under-x-logo-icon p a:hover,
+.under-google-play-logo-icon p a:hover,
+.under-uptodown-logo-icon p a:hover,
+.under-wikipedia-logo-icon p a:hover,
+.under-apple-logo-icon p a:hover {
+    text-decoration: underline;
+}
+
+
 
 .Login-on-Twitter-bunch-details p {
     font-size: 14px;
@@ -426,4 +457,38 @@ footer {
 
 .footer-bottom-link a :hover {
     opacity: 1;
+}
+
+@media (max-width: 800px) {
+    .twitter-expand-info {
+        display: none;
+    }
+
+    .twitter-main-info{
+        width: 100%;
+    }
+}
+
+@media (min-width: 800px) {
+
+
+    .twitter-main-info {
+        min-width: 31rem;
+    }
+}
+
+@media (min-width: 950px) {
+
+
+    .twitter-main-info {
+        min-width: 38rem;
+    }
+}
+
+@media (min-width: 1100px) {
+
+
+    .twitter-main-info {
+        min-width: 46rem;
+    }
 }
