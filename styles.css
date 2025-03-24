@@ -13,6 +13,13 @@ header {
     flex-direction: column; */
 }
 
+.homepage-link {
+    text-decoration: none;
+    color: inherit;
+    display: none;
+    
+}
+
 /* body {
     background-color: #101218;
     color: white;
@@ -41,8 +48,11 @@ header {
 .search-bar input {
     flex: 1;
     border: none;
-    height: 43px;
+    height: 40px;
     outline: none;
+    border-radius: 20px;
+    padding: 0rem 0rem 0rem 1rem;
+    font-size: 16px;
 }
 
 .search-bar hr {
@@ -494,6 +504,14 @@ footer {
 @media (min-width: 950px) {
     .twitter-main-info {
         min-width: 38rem;
+    }
+
+    .homepage-link {
+        display: block;
+    }
+
+    .small-google-button {
+        display: none;
     }
 }
 
