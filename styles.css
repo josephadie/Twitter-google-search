@@ -9,6 +9,8 @@ header {
     border-bottom: 1px solid black;
     padding-bottom: 1rem;
     height: 135px;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 /* body {
@@ -169,6 +171,7 @@ main{
 
 .expand-but-under {
     margin-top: 2rem;
+    min-width: 700px;
 }
 
 .twitter-expand-info {
@@ -176,6 +179,15 @@ main{
     border-left: 1px solid black;
     width: 15rem;
     height: 1000px;
+}
+
+.expand-links {
+    text-decoration: none;
+    color: blue;
+}
+
+.expand-links:hover {
+    text-decoration: underline;
 }
 
 .twitter-1 {
@@ -470,25 +482,40 @@ footer {
 }
 
 @media (min-width: 800px) {
-
-
     .twitter-main-info {
         min-width: 31rem;
+    }
+
+    .expand-but-under {
+        display: none;
     }
 }
 
 @media (min-width: 950px) {
-
-
     .twitter-main-info {
         min-width: 38rem;
     }
 }
 
 @media (min-width: 1100px) {
-
-
     .twitter-main-info {
         min-width: 46rem;
+    }
+}
+
+@media (min-width: 1250px) {
+    .twitter-main-info {
+        min-width: 50rem;
+        
+    }
+
+    .twitter-expand-info {
+        min-width: 25rem;
+    }
+
+    main {
+        /* display: flex; */
+        /* min-width: 80rem; */
+        justify-content: center;
     }
 }
