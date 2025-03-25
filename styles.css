@@ -30,6 +30,7 @@ header {
     align-items: center;
     gap: 2rem;
     padding: 1.5rem 1.5rem 0.8rem 2rem;
+    justify-content: space-between;
 }
 
 .search-bar{
@@ -44,6 +45,11 @@ header {
     height: 45px;
     /* make the clear button wider */
 }
+
+.tailand {
+    display: flex;
+}
+
 
 .search-bar input {
     flex: 1;
@@ -96,7 +102,7 @@ header {
 .nav {
     display: flex;
     gap: 6px;
-    
+    /* flex: .5; */
 }
 
 .nav-button,
@@ -281,10 +287,15 @@ main{
 
 .body-x-result-bunch-link {
     font-size: 18px;
+    /* color: blue; */
 }
 
 .body-x-result-bunch-link:hover {
     text-decoration: underline;
+}
+
+.body-x-result-bunch-link a {
+    color: blue;
 }
 
 .Login-on-Twitter-bunch,
@@ -518,6 +529,10 @@ footer {
 @media (min-width: 1100px) {
     .twitter-main-info {
         min-width: 46rem;
+    }
+
+    .search-bar {
+        max-width: 50rem;
     }
 }
 
